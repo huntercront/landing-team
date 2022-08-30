@@ -1,0 +1,160 @@
+.manager {
+   display: grid;
+   grid-template-columns: 12rem 1fr;
+   align-items: center;
+   column-gap: 1.25rem;
+   row-gap: 0.75rem;
+   padding-right: 1rem;
+}
+.manager .lazy-img {
+   grid-row: span 2;
+}
+.manager p {
+   align-self: start;
+   padding-bottom: 1rem;
+}
+.manager h3 {
+   align-self: end;
+   padding-top: 0.5rem;
+}
+.management-list {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   row-gap: 2.125rem;
+   padding-bottom: 3.75rem;
+}
+.management-list,
+.management .cols-2 .manager {
+   margin-top: 3rem;
+}
+.director {
+   min-width: 35rem;
+   margin-bottom: 2rem;
+}
+.management {
+   padding-top: 4.5rem;
+}
+.manager:not(.director) p.m-0 {
+   font-size: 0.825rem;
+}
+.manager:not(.director) h3 {
+   margin-top: 2rem;
+}
+.w-60 {
+   max-width: 46rem;
+}
+.cols-2 {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 1rem;
+}
+.cols-2 h2 {
+   letter-spacing: -0.035em;
+}
+.cols-2 .manager {
+   max-width: 75%;
+}
+.management.with-cols {
+   padding-bottom: 5.5rem;
+}
+@media screen and (max-width: 1320px) {
+   .manager:not(.director) h3 {
+      margin-top: 1rem;
+   }
+   .manager:not(.director) h3 {
+      margin-top: 0.75rem;
+   }
+   .manager p {
+      margin-bottom: 0;
+   }
+   .manager h3 {
+      font-size: 1rem;
+   }
+   .director.manager h3 {
+      font-size: 1.35rem;
+   }
+   .manager {
+      column-gap: 1rem;
+   }
+   .manager {
+      grid-template-columns: 10rem 1fr;
+   }
+   .banner .text-block {
+      padding: 2rem 0;
+   }
+}
+@media screen and (max-width: 1140px) {
+   .management-list {
+      grid-template-columns: 1fr 1fr;
+   }
+   .cols-2 .manager {
+      max-width: 100%;
+   }
+   .director {
+      max-width: 50%;
+   }
+}
+@media screen and (max-width: 858px) {
+   .cols-2 {
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+   }
+   .management .cols-2 .manager,
+   .management-list {
+      margin-top: 2.25rem;
+   }
+   .management {
+      padding-top: 3rem;
+   }
+}
+@media screen and (max-width: 748px) {
+   .director {
+      margin-bottom: 0;
+      max-width: none;
+      min-width: auto;
+   }
+   .management-list {
+      grid-template-columns: 1fr;
+      row-gap: 1rem;
+   }
+   .management {
+      padding-top: 2.5rem;
+   }
+}
+@media screen and (max-width: 548px) {
+   .management .title-m {
+      font-size: 1.25rem;
+   }
+   .manager {
+      grid-template-columns: 8rem 1fr;
+   }
+   .manager .lazy-img {
+      width: 100%;
+      height: 100%;
+   }
+   .manager .lazy-img img {
+      object-fit: cover;
+      height: 100%;
+   }
+   .director.manager h3 {
+      font-size: 1rem;
+      padding-top: 1rem;
+   }
+   .director.manager p {
+      font-size: 0.925rem;
+   }
+   .management-list {
+      margin-top: 1.25rem;
+   }
+   .manager:not(.director) p.m-0 {
+      font-size: 0.8rem;
+   }
+}
+@media screen and (max-width: 480px) {
+   .management .title-m {
+      font-size: 1.125rem;
+   }
+   .manager {
+      grid-template-columns: 6rem 1fr;
+   }
+}
